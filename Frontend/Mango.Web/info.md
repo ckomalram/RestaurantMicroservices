@@ -27,26 +27,9 @@
     https://www.nuget.org/
     https://learn.microsoft.com/en-us/ef/core/cli/dotnet#installing-the-tools
 
-# sql server steps
+# 2 - Product API - Advanced Setup
 
-## v0.0.1
-
-    Crear proyecto
-    Instalar librerías de EF , efsqlserver, efdesign
-    Configurar la db en appsettings
-    Crear entidades/Modelos
-    Crear Relaciones en las entidades.
-    Crear contexto hacia la DB
-    Inyectar context en program.cs
-    Crear Migraciones
-    Ejecutar migraciones
-    Crear Servicio relacionado al contexto.
-    Inyectar dependencias en program.cs
-    Crear controlador
-    Agregar Ilogger  (Opcional)
-
-# Pendientes
-
-    Oferta
-    Visitas
-    Usuarios
+Agregar connextionstring de API Producto
+Crear clase SD para manejar Variables de API
+Crear Interfaz de servicio
+Crear Dto. (Los mismos que se crearon en el API.)
