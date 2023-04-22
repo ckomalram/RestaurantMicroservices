@@ -1,3 +1,5 @@
+using Mango.Services.Product.API.Core.Context;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,6 +8,10 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+//Conf ef
+builder.Services.AddSqlServer<ProductDbContext>(builder.Configuration.GetConnectionString("cnMangoProduct"));
+
 
 var app = builder.Build();
 
