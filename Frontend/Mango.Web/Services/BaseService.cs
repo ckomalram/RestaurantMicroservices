@@ -30,6 +30,7 @@ public class BaseService : IBaseService
             {
                 message.Content = new StringContent(JsonConvert.SerializeObject(apiRequest.Data), Encoding.UTF8, "application/json");
             }
+ 
 
             HttpResponseMessage apiResponse = null;
 

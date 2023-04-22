@@ -19,7 +19,7 @@ public class ProductService : BaseService, IProductService
         {
             ApiType = SD.ApiType.POST,
             Data = productDto,
-            Url = SD.ProductAPIBase + "api/products",
+            Url = SD.ProductAPIBase + "api/product",
             AccessToken = ""
         };
 
@@ -31,7 +31,7 @@ public class ProductService : BaseService, IProductService
         var request = new ApiRequest()
         {
             ApiType = SD.ApiType.DELETE,
-            Url = SD.ProductAPIBase + "api/products/" + id,
+            Url = SD.ProductAPIBase + "api/product/" + id,
             AccessToken = ""
         };
 
@@ -43,7 +43,7 @@ public class ProductService : BaseService, IProductService
         var request = new ApiRequest()
         {
             ApiType = SD.ApiType.GET,
-            Url = SD.ProductAPIBase + "api/products",
+            Url = SD.ProductAPIBase + "api/product",
             AccessToken = ""
         };
 
@@ -55,7 +55,7 @@ public class ProductService : BaseService, IProductService
         var request = new ApiRequest()
         {
             ApiType = SD.ApiType.GET,
-            Url = SD.ProductAPIBase + "api/products/" + id,
+            Url = SD.ProductAPIBase + "api/product/" + id,
             AccessToken = ""
         };
 
@@ -68,7 +68,7 @@ public class ProductService : BaseService, IProductService
         {
             ApiType = SD.ApiType.PUT,
             Data = productDto,
-            Url = SD.ProductAPIBase + "api/products",
+            Url = SD.ProductAPIBase + "api/product",
             AccessToken = ""
         };
 

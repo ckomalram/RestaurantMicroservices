@@ -12,6 +12,16 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+//conf cors
+builder.Services.AddCors(opt =>
+{
+    opt.AddPolicy("CorsRule", rule =>
+    {
+        // rule.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://mipagina.com");
+        rule.AllowAnyHeader().AllowAnyMethod().WithOrigins("*");
+    });
+});
+
 // conf automapper
 builder.Services.AddAutoMapper(typeof(MappingProfile));
 //Conf ef
@@ -30,6 +40,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors("CorsRule");
 
 app.UseAuthorization();
 
