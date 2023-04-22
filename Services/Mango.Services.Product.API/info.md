@@ -27,26 +27,26 @@
     https://www.nuget.org/
     https://learn.microsoft.com/en-us/ef/core/cli/dotnet#installing-the-tools
 
-# sql server steps
+# 1 - Product API - Basic Setup
 
-## v0.0.1
+    Crea proyecto webapi net6.0
+    Se instalaor librerias necesarias
+    Se configuro connectionstring
+    Se configuro dbcontext
+    Se inyecto context  al program.cs
+    Se creo modelo
+    Se ejecuto primera migración
 
-    Crear proyecto
-    Instalar librerías de EF , efsqlserver, efdesign
-    Configurar la db en appsettings
-    Crear entidades/Modelos
-    Crear Relaciones en las entidades.
-    Crear contexto hacia la DB
-    Inyectar context en program.cs
-    Crear Migraciones
-    Ejecutar migraciones
-    Crear Servicio relacionado al contexto.
-    Inyectar dependencias en program.cs
+# 2 - Product API - Advanced Setup
+
+    Crear Dto (Create , reponse)
+    Crear interfaz de repo
+    Crear automapper
+    Inyectar automapper a program.cs
+    Crear repo
+    Inyectar repo a program.cs
     Crear controlador
-    Agregar Ilogger  (Opcional)
-
-# Pendientes
-
-    Oferta
-    Visitas
-    Usuarios
+    Crear semillero de productos (Opcional)
+    Agregar Azure Storage Exploer for images (Opcional)
+    Probar Crud Product
+    Configurar Product API en proyecto web.
