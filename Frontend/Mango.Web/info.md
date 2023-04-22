@@ -42,4 +42,6 @@ Inyectar product service en program cs
 Agregar Bootstrap v5
 Agregar imagenes
 
-# 3 - Web - Product Crud
+# 3-4 - Web - Product Crud
+
+Logica de crud en parte web con mvc.
