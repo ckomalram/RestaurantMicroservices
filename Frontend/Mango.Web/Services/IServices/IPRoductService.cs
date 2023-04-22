@@ -4,7 +4,7 @@ using Mango.Web.Models;
 
 namespace Mango.Web.Services.IServices;
 
-public interface IPRoductService
+public interface IProductService
 {
 
     Task<T> GetAllProductsAsync<T>();

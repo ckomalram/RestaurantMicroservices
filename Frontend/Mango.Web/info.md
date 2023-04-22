@@ -33,3 +33,7 @@ Agregar connextionstring de API Producto
 Crear clase SD para manejar Variables de API
 Crear Interfaz de servicio
 Crear Dto. (Los mismos que se crearon en el API.)
+Crear modelo ApiRequest
+Crear Interfacez base
+Crear servicio base
+Implementar servicio base
