@@ -1,6 +1,7 @@
 using AutoMapper;
 using Mango.Services.Product.API.Core.Context;
 using Mango.Services.Product.API.Core.Models.Dtos;
+using Mango.Services.Product.API.Core.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +17,8 @@ builder.Services.AddAutoMapper(typeof(MappingProfile));
 //Conf ef
 builder.Services.AddSqlServer<ApplicationDbContext>(builder.Configuration.GetConnectionString("cnMangoProduct"));
 
+// conf repo's
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
 
 var app = builder.Build();
 
