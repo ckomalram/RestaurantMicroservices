@@ -10,7 +10,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 //Conf ef
-builder.Services.AddSqlServer<ProductDbContext>(builder.Configuration.GetConnectionString("cnMangoProduct"));
+builder.Services.AddSqlServer<ApplicationDbContext>(builder.Configuration.GetConnectionString("cnMangoProduct"));
 
 
 var app = builder.Build();
