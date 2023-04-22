@@ -51,8 +51,9 @@ public class ProductRepository : IProductRepository
             await _appDbcontext.SaveChangesAsync();
             return true;
         }
-        catch (Exception)
+        catch (Exception ex)
         {
+            Console.WriteLine(ex.ToString());
             return false;
         }
     }
