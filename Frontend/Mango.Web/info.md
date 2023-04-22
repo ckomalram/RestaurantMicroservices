@@ -36,4 +36,10 @@ Crear Dto. (Los mismos que se crearon en el API.)
 Crear modelo ApiRequest
 Crear Interfacez base
 Crear servicio base
-Implementar servicio base
+Crear servicio product
+Inyectar httpclient service en program cs
+Inyectar product service en program cs
+Agregar Bootstrap v5
+Agregar imagenes
+
+# 3 - Web - Product Crud
